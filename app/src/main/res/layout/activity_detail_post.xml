@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailPostActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/_8ssp"
+        android:paddingBottom="@dimen/_8ssp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20ssp"
+                android:layout_height="@dimen/_20ssp"
+                android:src="@drawable/ic_baseline_chevron_left_24"
+                android:id="@+id/ivBack"
+                android:layout_marginLeft="@dimen/_3ssp"/>
+
+            <com.dicoding.kumparantest2021.ui.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="Post Detail"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"
+                android:textSize="@dimen/_11ssp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5ssp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            app:cardCornerRadius="@dimen/_3ssp"
+            app:cardElevation="@dimen/_3ssp"
+            android:layout_marginLeft="@dimen/_5ssp"
+            android:layout_marginRight="@dimen/_5ssp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="@dimen/_8ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_3ssp">
+
+                    <LinearLayout
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.dicoding.kumparantest2021.ui.CustomTextViewBold
+                            android:id="@+id/tvUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mario Michel"
+                            android:textSize="@dimen/_11ssp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGreen"/>
+
+                        <com.dicoding.kumparantest2021.ui.CustomTextViewRegular
+                            android:id="@+id/tvUserCompany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Company Foundation"
+                            android:gravity="left"
+                            android:textSize="@dimen/_9ssp"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.dicoding.kumparantest2021.ui.CustomTextViewBold
+                            android:id="@+id/tvPostTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <com.dicoding.kumparantest2021.ui.CustomTextViewRegular
+                            android:id="@+id/tvPostBody"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet "
+                            android:gravity="left"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            app:cardCornerRadius="@dimen/_3ssp"
+            app:cardElevation="@dimen/_3ssp"
+            android:layout_marginLeft="@dimen/_5ssp"
+            android:layout_marginRight="@dimen/_5ssp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="@dimen/_5ssp"
+                android:orientation="vertical">
+
+                            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                android:id="@+id/swipeRefresh"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="0sp"
+                                android:visibility="visible">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvListComment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible"
+                                    android:layout_marginTop="@dimen/_2ssp"
+                                    tools:listitem="@layout/list_row_comment">
+                                </androidx.recyclerview.widget.RecyclerView>
+
+                            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
