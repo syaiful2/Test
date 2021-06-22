@@ -24,7 +24,6 @@
             android:layout_marginLeft="@dimen/_3ssp">
 
             <LinearLayout
-                android:paddingLeft="@dimen/_7sdp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
