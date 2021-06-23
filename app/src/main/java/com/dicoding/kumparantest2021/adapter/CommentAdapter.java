@@ -43,6 +43,15 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ItemView
         return mList.size();
     }
 
+    public void clearData() {
+        int size = this.mList.size();
+        if (size > 0) {
+            for (int i = 0; i < size; i++) {
+                this.mList.remove(0);
+            }
+        }
+    }
+
     public class ItemViewHolder extends RecyclerView.ViewHolder {
         TextView tvCommentName, tvCommentBody;
 

@@ -11,7 +11,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
-        android:background="#fff"
+        android:background="@color/colorPrimary"
         android:gravity="center_vertical"
         android:paddingTop="@dimen/_8ssp"
         android:paddingBottom="@dimen/_8ssp">
@@ -36,310 +36,224 @@
                 android:layout_marginLeft="@dimen/_8ssp"
                 android:text="Profile"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#ffff"
                 android:textSize="@dimen/_11ssp" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginBottom="0dp"-->
-<!--        android:layout_marginLeft="3dp"-->
-<!--        android:layout_marginRight="3dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:background="#fff"-->
-<!--        android:orientation="vertical">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:id="@+id/divHeaderLogin"-->
-<!--            android:visibility="visible"-->
-<!--            android:layout_marginTop="0sp"-->
-<!--            android:layout_marginBottom="5sp"-->
-<!--            android:paddingLeft="@dimen/_8ssp">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="@dimen/_24ssp"-->
-<!--                android:layout_height="@dimen/_24ssp"-->
-<!--                android:src="@drawable/ic_baseline_chevron_left_24"/>-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="vertical"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:layout_marginLeft="8sp">-->
-
-<!--                <com.dicoding.kumparantest2021.ui.CustomTextViewBold-->
-<!--                    android:id="@+id/tvUserID"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="0dp"-->
-<!--                    android:layout_marginRight="5dp"-->
-<!--                    android:layout_marginTop="0dp"-->
-<!--                    android:background="#00000000"-->
-<!--                    android:gravity="top|left"-->
-<!--                    android:textColor="@color/colorAccent"-->
-<!--                    android:textSize="15.4sp"-->
-<!--                    android:textStyle="bold"-->
-<!--                    android:text="User ID"/>-->
-<!--            </LinearLayout>-->
-
-<!--        </LinearLayout>-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="62sp"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:padding="8sp"-->
-<!--            android:visibility="visible">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="24dp"-->
-<!--                android:layout_height="24dp"-->
-<!--                android:src="@drawable/ic_baseline_person_24"-->
-<!--                android:layout_gravity="top"-->
-<!--                app:tint="#b1b1b1" />-->
-
-<!--            <View-->
-<!--                android:layout_width="0.6dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_gravity="right"-->
-<!--                android:layout_marginTop="0sp"-->
-<!--                android:layout_marginLeft="8sp"-->
-<!--                android:background="#b1b1b1"-->
-<!--                android:visibility="gone"/>-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_marginLeft="12dp"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal">-->
-
-<!--                    <com.example.yazid12rpl02.ui.CustomTextViewRegular-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Nama Lengkap"-->
-<!--                        android:textSize="11.7sp"-->
-<!--                        android:textColor="#4E4E4E"/>-->
-
-<!--                    <com.example.yazid12rpl02.ui.CustomTextViewLight-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="*"-->
-<!--                        android:layout_marginLeft="5sp"-->
-<!--                        android:textColor="#c62828"/>-->
-<!--                </LinearLayout>-->
-
-<!--                <com.example.yazid12rpl02.ui.CustomEditTextLight-->
-<!--                    android:id="@+id/etName"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="0dp"-->
-<!--                    android:layout_marginRight="5dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:background="#00000000"-->
-<!--                    android:gravity="top|left"-->
-<!--                    android:hint="Masukkan nama..."-->
-<!--                    android:inputType="textCapCharacters"-->
-<!--                    android:textColor="#252525"-->
-<!--                    android:textSize="12.4sp" />-->
-
-<!--            </LinearLayout>-->
-<!--        </LinearLayout>-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="62sp"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:padding="8sp"-->
-<!--            android:visibility="visible">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="24dp"-->
-<!--                android:layout_height="24dp"-->
-<!--                android:src="@drawable/ic_phone_black_24dp"-->
-<!--                android:layout_gravity="top"-->
-<!--                app:tint="#b1b1b1" />-->
 
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_marginLeft="12dp"-->
-<!--                android:orientation="vertical">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="vertical">
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="8sp"
+            android:visibility="visible">
 
-<!--                    <com.example.yazid12rpl02.ui.CustomTextViewRegular-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Nomor Ponsel Aktif"-->
-<!--                        android:textSize="11.7sp"-->
-<!--                        android:textColor="#4E4E4E"/>-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_gravity="center_horizontal"
+                app:tint="#b1b1b1" />
 
-<!--                    <com.example.yazid12rpl02.ui.CustomTextViewLight-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="*"-->
-<!--                        android:layout_marginLeft="5sp"-->
-<!--                        android:textColor="#c62828"/>-->
-<!--                </LinearLayout>-->
+            <com.dicoding.kumparantest2021.ui.CustomTextViewBold
+                android:id="@+id/tvUserName"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textStyle="bold"
+                android:textSize="11.7sp"
+                android:textColor="#4E4E4E"/>
 
-<!--                <com.example.yazid12rpl02.ui.CustomEditTextLight-->
-<!--                    android:id="@+id/etPhone"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="0dp"-->
-<!--                    android:layout_marginRight="5dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:background="#00000000"-->
-<!--                    android:gravity="top|left"-->
-<!--                    android:hint="Masukkan nomor ponsel..."-->
-<!--                    android:inputType="phone"-->
-<!--                    android:textColor="#252525"-->
-<!--                    android:textSize="12.4sp" />-->
+            <com.dicoding.kumparantest2021.ui.CustomTextViewBold
+                android:id="@+id/tvUserEmail"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User@gmail.com"
+                android:textStyle="bold"
+                android:textSize="11.7sp"
+                android:textColor="#4E4E4E"/>
 
-<!--            </LinearLayout>-->
-<!--        </LinearLayout>-->
+        </LinearLayout>
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="@dimen/_160sdp"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:padding="8sp"-->
-<!--            android:visibility="visible">-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginTop="6sp"
+            android:layout_marginBottom="6sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:background="#b1b1b1"
+            android:visibility="visible"/>
 
-<!--            <ImageView-->
-<!--                android:layout_width="24dp"-->
-<!--                android:layout_height="24dp"-->
-<!--                android:src="@drawable/ic_insert_drive_file_black_24dp"-->
-<!--                android:layout_gravity="top"-->
-<!--                app:tint="#b1b1b1" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8sp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_domain_24"
+                android:layout_gravity="top"
+                app:tint="#b1b1b1" />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginTop="0sp"
+                android:layout_marginLeft="8sp"
+                android:background="#b1b1b1"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.dicoding.kumparantest2021.ui.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company name "
+                        android:textSize="11.7sp"
+                        android:textColor="#4E4E4E"/>
+
+                    <com.dicoding.kumparantest2021.ui.CustomTextViewBold
+                        android:id="@+id/tvUserCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PT Company"
+                        android:textStyle="bold"
+                        android:textSize="11.7sp"
+                        android:textColor="#4E4E4E"/>
+
+                </LinearLayout>
 
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_marginLeft="12dp"-->
-<!--                android:orientation="vertical">-->
+            </LinearLayout>
+        </LinearLayout>
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8sp"
+            android:visibility="visible">
 
-<!--                    <com.example.yazid12rpl02.ui.CustomTextViewRegular-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="KTP"-->
-<!--                        android:textSize="11.7sp"-->
-<!--                        android:textColor="#4E4E4E"/>-->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_home_24"
+                android:layout_gravity="top"
+                app:tint="#b1b1b1" />
 
-<!--                    <com.example.yazid12rpl02.ui.CustomTextViewLight-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="*"-->
-<!--                        android:layout_marginLeft="5sp"-->
-<!--                        android:textColor="#c62828"/>-->
-<!--                </LinearLayout>-->
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginTop="0sp"
+                android:layout_marginLeft="8sp"
+                android:background="#b1b1b1"
+                android:visibility="visible"/>
 
-<!--                <ImageView-->
-<!--                    android:src="@drawable/ic_image_black_24dp"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="@dimen/_120sdp"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
 
-<!--            </LinearLayout>-->
-<!--        </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-<!--        <com.example.yazid12rpl02.ui.CustomTextViewLight-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="* Untuk menyimpan perubahan, perangkat HARUS tersambung internet"-->
-<!--            android:layout_marginLeft="12sp"-->
-<!--            android:layout_marginRight="12sp"-->
-<!--            android:layout_marginTop="3sp"-->
-<!--            android:textSize="10dp"-->
-<!--            android:textColor="#c62828"/>-->
+                    <com.dicoding.kumparantest2021.ui.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address on "
+                        android:textSize="11.7sp"
+                        android:textColor="#4E4E4E"/>
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="horizontal">-->
+                    <com.dicoding.kumparantest2021.ui.CustomTextViewBold
+                        android:id="@+id/tvUserAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Siliwangi no. 33"
+                        android:textStyle="bold"
+                        android:textSize="11.7sp"
+                        android:textColor="#4E4E4E"/>
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="0sp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:layout_marginLeft="4.3dp"-->
-<!--                android:layout_marginRight="4.3dp"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:paddingLeft="0dp"-->
-<!--                android:paddingBottom="12dp"-->
-<!--                android:paddingTop="12dp"-->
-<!--                android:background="@drawable/bg_rectangle_1"-->
-<!--                android:id="@+id/divUpdate">-->
+                </LinearLayout>
 
-<!--                <com.example.yazid12rpl02.ui.CustomTextViewBold-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="SIMPAN"-->
-<!--                    android:layout_marginLeft="12dp"-->
-<!--                    android:textSize="@dimen/_10ssp"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:gravity="center"-->
-<!--                    android:textColor="#000"-->
-<!--                    android:letterSpacing="0.1"-->
-<!--                    android:textStyle="bold"/>-->
-<!--            </LinearLayout>-->
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="0sp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:layout_marginLeft="4.3dp"-->
-<!--                android:layout_marginRight="4.3dp"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:paddingLeft="0dp"-->
-<!--                android:paddingBottom="12dp"-->
-<!--                android:paddingTop="12dp"-->
-<!--                android:background="@drawable/bg_rectangle_2"-->
-<!--                android:id="@+id/divLogout">-->
+            </LinearLayout>
+        </LinearLayout>
 
-<!--                <com.example.yazid12rpl02.ui.CustomTextViewBold-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:layout_marginLeft="0dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:gravity="center"-->
-<!--                    android:letterSpacing="0.1"-->
-<!--                    android:text="LOGOUT"-->
-<!--                    android:textColor="#000"-->
-<!--                    android:textSize="@dimen/_10ssp"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
-<!--        </LinearLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:gravity="left|center_vertical"
+            android:visibility="visible">
 
-<!--    </LinearLayout>-->
+            <com.dicoding.kumparantest2021.ui.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="Albums"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="@dimen/_13ssp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0sp"
+        android:background="#000"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="#000"
+            android:layout_marginTop="@dimen/_2ssp"
+            tools:listitem="@layout/list_row_album">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
 </LinearLayout>

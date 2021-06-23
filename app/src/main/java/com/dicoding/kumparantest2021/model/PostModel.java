@@ -4,20 +4,29 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class PostModel implements Parcelable {
-    private int POST_ID;
-    private String POST_TITLE;
-    private String POST_BODY;
-    private int USER_ID;
-    private String USER_NAME;
-    private String USER_COMPANY_NAME;
+    int POST_ID;
+    String POST_TITLE;
+    String POST_BODY;
+    int USER_ID;
+    String USER_NAME;
+    String USER_COMPANY_NAME;
+    String USER_ADDRESS;
+    String USER_EMAIL;
 
-    public PostModel(Parcel in) {
+
+    public PostModel() {
+
+    }
+
+    protected PostModel(Parcel in) {
         POST_ID = in.readInt();
         POST_TITLE = in.readString();
         POST_BODY = in.readString();
         USER_ID = in.readInt();
         USER_NAME = in.readString();
         USER_COMPANY_NAME = in.readString();
+        USER_ADDRESS = in.readString();
+        USER_EMAIL = in.readString();
     }
 
     public static final Creator<PostModel> CREATOR = new Creator<PostModel>() {
@@ -31,10 +40,6 @@ public class PostModel implements Parcelable {
             return new PostModel[size];
         }
     };
-
-    public PostModel() {
-
-    }
 
     public int getPOST_ID() {
         return POST_ID;
@@ -84,6 +89,22 @@ public class PostModel implements Parcelable {
         this.USER_COMPANY_NAME = USER_COMPANY_NAME;
     }
 
+    public String getUSER_ADDRESS() {
+        return USER_ADDRESS;
+    }
+
+    public void setUSER_ADDRESS(String USER_ADDRESS) {
+        this.USER_ADDRESS = USER_ADDRESS;
+    }
+
+    public String getUSER_EMAIL() {
+        return USER_EMAIL;
+    }
+
+    public void setUSER_EMAIL(String USER_EMAIL) {
+        this.USER_EMAIL = USER_EMAIL;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -97,5 +118,7 @@ public class PostModel implements Parcelable {
         dest.writeInt(USER_ID);
         dest.writeString(USER_NAME);
         dest.writeString(USER_COMPANY_NAME);
+        dest.writeString(USER_ADDRESS);
+        dest.writeString(USER_EMAIL);
     }
 }

@@ -12,6 +12,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.dicoding.kumparantest2021.R;
+import com.dicoding.kumparantest2021.helper.AppHelper;
 import com.dicoding.kumparantest2021.model.PostModel;
 
 import java.util.List;
@@ -57,14 +58,13 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ItemViewHolder
     public class ItemViewHolder extends RecyclerView.ViewHolder {
         TextView tvUserName, tvUserCompany, tvPostTitle, tvPostBody;
         LinearLayout divDetail;
-        CardView getPost;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvUserName = itemView.findViewById(R.id.txUserName);
-            tvUserCompany = itemView.findViewById(R.id.txUserCompany);
-            tvPostTitle = itemView.findViewById(R.id.txPostTitle);
-            tvPostBody = itemView.findViewById(R.id.txPostBody);
+            tvUserName = itemView.findViewById(R.id.tvUserName);
+            tvUserCompany = itemView.findViewById(R.id.tvUserCompany);
+            tvPostTitle = itemView.findViewById(R.id.tvPostTitle);
+            tvPostBody = itemView.findViewById(R.id.tvPostBody);
             divDetail = itemView.findViewById(R.id.item_post);
         }
 
@@ -81,7 +81,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ItemViewHolder
 
                 @Override
                 public void onClick(View view) {
-//                    AppHelper.goToOrderDetail(mCtx, aModel);
+                    AppHelper.goToPostDetail(mCtx, aModel);
                 }
             });
         }
